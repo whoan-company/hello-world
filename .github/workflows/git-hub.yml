@@ -10,7 +10,7 @@ jobs:
     - uses: actions/checkout@v1
     - uses: whoan/docker-build-with-cache-action@master
       with:
-        username: whoan
+        username: whoan-company
         password: "${{ secrets.GITHUB_TOKEN }}"  # you don't need to manually set this secret. GitHub does it on your behalf
         registry: docker.pkg.github.com
         image_name: hello-world
